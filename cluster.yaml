@@ -1,0 +1,12 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: kong-on-eks
+
+nodeGroups:
+  - name: main
+    instanceType: m5.large
+    desiredCapacity: 2
+    ssh:
+      allow: false
