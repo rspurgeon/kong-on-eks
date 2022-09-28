@@ -3,6 +3,7 @@ kind: ClusterConfig
 
 metadata:
   name: kong-on-eks
+  region: us-east-2
 
 nodeGroups:
   - name: main

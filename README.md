@@ -10,11 +10,8 @@
 
 ## Usage
 
-* Ensure `AWS_PROFILE` is set as properly and desired region is configured in `aws` configuration. To validate:
-   ```
-   aws configure get region --profile $AWS_PROFILE
-   ```
 * Modify `cluster.yaml` if desired
+   * Verify region is as desired
 * `eksctl create cluster -f cluster.yaml`
    * wait a long time...
 * Follow the Kubernetes in the Cloud steps in the [helm quickstart](https://docs.konghq.com/gateway/latest/install/kubernetes/helm-quickstart/)
